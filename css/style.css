@@ -1,0 +1,1029 @@
+*{
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+    padding: 0;
+    width: auto;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* Стили header */
+header{
+    display: flex;
+    align-items: center;
+    background-color: #FFEDEC;
+    height: 35%;
+    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.15);
+}
+#zatemnenie {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  
+  #okno {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    padding: 3em;
+    background-color: #FFF3EC;
+    box-shadow: 7px 7px 40px 0px #000000 25%;
+    border-radius: 7px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  #zatemnenie:target {display: block;}
+  #okno .button{
+    width: 60%;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 2%;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: #D9072B;
+    cursor: pointer;
+  }
+  .close {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+    }
+    .close:hover { opacity: 1; }
+    
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 25px;
+    width: 2px;
+    background-color: #333;
+    }
+    .close:before {
+    transform: rotate(45deg);
+    }
+    .close:after {
+    transform: rotate(-45deg);
+    }
+  .close:hover {
+      background: #e6e6ff;
+      border: black;
+}
+
+  input{
+    width: 60%;
+    height: 15%;
+    margin: 0.5em;
+    padding-left: 2%;
+  }
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0 1% 6%;
+    width: 47%;
+}
+.logo1{
+    font-family: 'Lobster', sans-serif;
+    color: #D9072B;
+    font-size: 2em;
+}
+.logo2{
+    font-family: 'Balsamiq Sans', serif;
+    font-size: 0.8em;
+    color: black;
+
+    }
+.logotxt{
+    font-size: 0.7em;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 10px;
+}
+.phone{
+    font-size: 0.8em;
+    color: #D9072B;
+    margin-top: 0.7em;
+}
+.topnav{
+    font-size: 0.8em;
+}
+.topnav a{
+    color: black;
+    padding-top: 0.2em;
+    margin-left: 1em;
+    font-size: 1.1em;
+}
+.topnav a:hover{
+    border-bottom: 2px solid #D9072B; 
+}
+.topnav .icon{
+    display: none;
+    font-size: 5vh;
+}
+.icons{
+    align-self: center;
+}
+.icons > a{
+    padding: 7px;
+}
+.icons a:hover{
+    opacity: 60%;
+}
+body{
+    height: 60%;
+}
+/* Стили футера */
+footer{
+    background-color: #DD2040;
+    height: 20%;
+}
+.foot{
+   width: 88%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   color:white;
+   margin-top: 2%;
+   align-items: center;
+   
+}
+.foot > p{
+    font-size:0.9em;
+}
+.foot > img{
+    margin: 1% 0;
+}
+    /*стили первого блока  */
+.main{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   margin: auto;
+}
+.main h1{
+    font-size: 2.8em;
+}
+.main p{
+    font-size: 1.7em;
+    margin-bottom: 2%;
+}
+.main-txt{
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main-but{
+    width: 50%;
+    font-size: 2.8vh;
+    padding: 2%;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: #D9072B;
+    cursor: pointer;
+    
+}
+.main-but:hover{
+    border: 2px solid #82091D;
+    opacity: 95%;
+}
+.main > .cat{
+white-space: pre-line;
+margin: 0 2vh;
+}
+.cd{
+    margin: 4vh 4vh 2vh 0;
+}
+ /*стили 2 и 3 блока  */
+.h2in{
+    margin: 4vh 10vh;
+}
+.inf-tbl{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.inf img{
+    margin: 1vh;
+}
+.inf{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1vh;
+}
+.inf p{
+    white-space: pre-line;
+    text-align: center;
+    font-size: 2vh;
+}
+.obr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    align-content: center;
+}
+.obr > p{
+    white-space: pre-line;
+    margin: 5% 0;
+    font-size: 2vh;
+}
+.vst{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.vst > p{
+    white-space: pre-line;
+    margin-right: 10%;
+    font-size: 2.2vh;
+}
+
+/* Стили о породах */
+.pudel, .PTI, .aboutdogs{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+ }
+ .pudel h1, .PTI h1, .aboutdogs h1{
+     font-size: 5vh;
+     text-align: left;
+     margin: 3vh 0;
+ }
+ .pudel h2, .PTI h2{
+    font-size: 3vh;
+    text-align: left;
+    margin: 3vh 0;
+}
+ .pudel p, .PTI p, .aboutdogs p{
+     font-size: 2vh;
+     margin-bottom: 2%;
+     white-space: pre-line;
+     padding-left: 3vh;
+ }
+ .aboutdogs p{
+     margin-bottom: 5%;
+     text-align: center;
+ }
+ .ptiPh{
+     align-self: center;
+     justify-content: space-between;
+     margin: 2vh;
+ }
+/* слайдер */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    
+  }
+  .mySlides {
+      display: none;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .text {
+    color: #f2f2f2;
+    background-color: #DD2040;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .dots{
+      margin-left: 32em;
+      margin-top: -1em;;
+  }
+  .dot {
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    border:1px solid #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+/* обзор */
+main{
+    margin-top: 3em;
+}
+.names{
+    width: 60%;
+    margin: auto;
+    margin-top: 2em;
+}
+.names p{
+    font-size: 20px;
+    margin: 2em 0;
+}
+.names > .tel{
+    font-size: 15px;
+}
+.names > h2 > img{
+margin-left: 10px;
+}
+/* контакты */
+.contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.contact > a:hover{
+opacity: 80%;
+}
+.bodycontact{
+    margin-bottom: 5%;
+}
+.contact p{
+    margin: 2vh;
+}
+.conth1{
+    margin: 1em 5em;
+    font-weight: bold;
+}
+.call{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.call p{
+    font-size: 20px;
+}
+.call span{
+    color: #DD2040;
+}
+.call button{
+    width: 30em;
+    height: 5em;
+    background: #DD2040;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid white;
+}
+.call button:hover{
+    border: 3px solid #82091D;
+    opacity: 95%;
+}
+.em{
+    margin-left: 15em;
+}
+.em a{
+    color:#DD2040;
+}
+.em a:hover{
+    text-decoration: underline;
+}
+
+.name, .cont{
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+}
+.icon-bar{
+    font-size: 40px;
+    margin-top: -0.8em;
+    margin-left: 0.3em;
+}
+.whatsapp{
+    color: green;
+}
+.instagram{
+    color: indigo;
+}
+/* Новости */
+.bodynews{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.news{
+    display: flex;
+    width: 60%;
+    height: auto;
+    background-color: #fff6ec;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 1%;
+    margin: 4vh;
+}
+.news img{
+    margin: 4vh;
+    width: 40%;
+    height: 70%;
+    border-radius: 1%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+}
+.newstxt{
+    margin: 4vh;
+    width: 50%;
+    align-self: center;
+}
+.newstxt p{
+    font-size: 2.5vh;
+    padding: 4vh 0;
+}
+.newstxt > .date{
+    font-size: 1.8vh;
+    text-align: right;
+}
+/* каталог */
+.filtr{
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    margin: auto;
+    margin-top: 2%;
+}
+.filtr > a{
+    text-decoration: underline;
+    color: #807C7C;
+    font-size: 14px;
+    align-self: center;
+}
+.dropbtn {
+    background-color: #DD2040;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 20vh;
+    height: 7vh;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #D9072B;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF3EC;
+    min-width: 20vh;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #DD2040;
+    z-index: 1;
+}
+.dropdown-content label {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display:block;
+}
+.catalog
+{
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+.dog
+{
+text-decoration: none;
+display: inline-block;
+vertical-align: top;
+width: 30%;
+margin: 3em 0 0 0;
+}
+
+.dog .r
+{
+text-align: center;
+color: black;
+}
+.r a,  .r a:active{
+    color: black;
+}
+.r a:hover{
+    color: #DD2040;
+}
+/* Адаптивность */
+@media screen and (max-width:1024px){
+    .main img{
+        width: 50%;
+        height: 50%;
+    }  
+    .main h1{
+        font-size: 1.8em;
+    } 
+    .main p{
+        font-size: 1.2em;
+    }
+    .main-but{
+        width: 60%;
+        font-size: 1.2em;
+    }
+    .inf img{
+        width: 150px;
+        height: 150px;
+    }
+    .vst img{
+        width: 40%;
+        height: 40%;
+    }
+}
+@media screen and (max-width:960px){
+    .main img{
+        width: 380px;
+        height: 350px;
+    }
+    .main h1{
+        font-size: 2em;
+    }
+    .main p{
+        font-size: 1.2em;
+    }
+    .main-but{
+        width: 60%;
+        font-size: 1.1em;
+    }
+    .h2in{
+       margin: 2% 5%;
+       font-size: 1.2em;
+   }
+   .inf img{
+       width: 100px;
+       height: 100px;
+       margin: auto;
+   }
+   .inf p{
+       font-size: 0.8em;
+   }
+   .obr{
+       width: 80%;
+   }
+   .obr > p{
+       font-size: 0.9em;
+   }
+   .vst img{
+       width: 180px;
+       height: 180px;
+   }
+   .vst > p{
+       font-size: 0.8em;
+   }
+   /* Стили футера */
+   .foot > p{
+       display: none;
+   }
+   .foot > nav{
+       width: 50%;
+   }
+   .logo3 > img{
+       margin: 5%;
+   }
+   .logotxt2{
+       justify-content: center;
+   }
+   .logotxt2 p{
+    font-size: 0.8em;
+   }
+   .logotxt2 > h4{
+       font-size: 1.5em;
+   }
+   .botnav{
+       font-size: 0.8em;
+   }
+/* породы */
+   .pudel h1, .PTI h1, .aboutdogs h1{
+       font-size: 3vh;
+   }
+   .pudel h2, .PTI h2{
+      font-size: 2vh;
+  }
+   .pudel p, .PTI p, .aboutdogs p{
+       font-size: 1.5vh;
+   }
+
+   .aboutdogs p{
+       margin-bottom: 5%;
+       text-align: center;
+   }
+   .ptiPh img{
+       width: 45%;
+       height: auto;
+   }
+/* Новости */
+.newstxt h3{
+   font-size: 2vh;
+}
+.newstxt p{
+   font-size: 1.2vh;
+}
+.newstxt > .date{
+   font-size: 1vh;
+}
+/* Каталог */
+.cd{
+   display: none;
+}
+
+.main > .cat{
+    width: 80%;
+    }
+.filtr{
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    margin: auto;
+    margin-top: 2%;
+}
+.catalog
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.r img{
+    width: 500px;
+    height: 500px;
+}
+}
+@media screen and (max-width:995px){
+    .ptiPh img{
+        width: 45%;
+        height: 350px;
+    }
+}
+@media screen and (max-width:816px){
+    .ptiPh img{
+        display: block;
+        margin: auto;
+        margin-bottom: 2px;
+        width: 50%;
+        height: 300px;
+}
+}
+@media screen and (max-width:768px){
+    .logo{
+        margin-top: 3%;
+    }
+    .phone{
+        display: none;
+    }
+    .topnav a:not(:last-child){
+        display: none;
+    }
+    .topnav .icon{
+        display: flex;
+        float: right;
+        order: -1;
+    }
+    .topnav .icon:hover{
+        border-bottom: none;
+    }
+.close{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 175%;
+}
+  .close a:not(:last-child){
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #fffafa;
+  }
+  .close .icon{
+    order: -1;
+    align-self: flex-end;
+  }
+  .close .icon:hover{
+      border-bottom: none;
+  }
+  .md{
+      width: 300px;
+      height: 300px;
+  }
+  .main-txt h1{
+    font-size: 1.3em;
+  }
+  .main-txt p{
+      font-size: 0.9em;
+  }
+  .main-but{
+      font-size: 0.8em;
+  }
+  .inf p{
+      font-size: 0.7em;
+  }
+  .h2in{
+      font-size: 1em;
+  }
+  .obr > .vst p{
+    font-size: 0.6em;
+  }
+  .obr p{
+      font-size: 0.8em;
+  }
+  .logotxt2{
+      justify-content: center;
+  }
+  .ptiPh img{
+    width: 55%;
+    height: 300px;
+}
+}
+@media screen and (max-width:703px){
+    .main-txt h1{
+        font-size: 1.2em;
+    }
+    .main-txt p{
+        font-size: 0.8em;
+    }
+    .main-but{
+        width: 90%;
+        margin: 0.5% 2% 0.5% 2%;
+        font-size: 0.8em;
+    }
+    .md{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:696px){
+    .main img{
+        width: 50%;
+        height: 50%;
+    }  
+    .md{
+        height: 300px;
+        width: 300px;
+    }
+    .main-but{
+        width: 60%;
+        font-size: 2vh;
+    }
+    .inf img{
+        width: 100px;
+        height: 100px;
+    }
+    .vst img{
+        width: 30%;
+        height: 30%;
+    }
+}
+@media screen and (max-width:691px){
+    .inf{
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1em;
+    }
+    .inf img{
+        width: 150px;
+        height: 150px;
+    }
+   .inf-tbl{
+       flex-direction: column;
+   }
+}
+@media screen and (max-width:650px){
+    .main > img{
+        display: none;
+        }
+        .main, .inf-tbl{
+            display: block;
+           
+        }
+        .main-txt {
+            text-align: center;
+        }
+        .main-txt  h1{
+          font-size: 1.5em;
+        }
+        .main-txt p{
+           font-size: 1em;  
+        }
+        .main-but{
+            width: 80%;
+            font-size: 0.9em;
+        }
+       
+        .inf p{
+            font-size: 0.7em;
+        }
+        .logotxt2{
+            width: 50%;
+        }
+        .logotxt2 h4{
+            font-size: 1.3em;
+        }
+        .logotxt2 p{
+            font-size: 0.9em;
+            margin-top: 1%;
+        }
+        .botnav{
+            width: 25%;
+        }
+    .ptiPh img{
+        width: 50%;
+        height: 300px;
+    }
+    .pudel, .PTI{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:641px){
+    .botnav{
+        width: 25%;
+    }
+}
+@media screen and (max-width:616px){
+    .main img{
+        width: 50%;
+        height: 50%;
+    }  
+    .main h1{
+        font-size: 95%;
+    }
+    .main p{
+        font-size: 70%;
+    }
+    .main-but{
+        width: 60%;
+        font-size: 70%;
+    }
+    
+}
+@media screen and (max-width:557px){
+    .botnav{
+        width: 30%;
+    }
+}
+@media screen and (max-width:524px){
+    /* породы */
+    .ptiPh img{
+        width: 60%;
+        height: 350px;
+    }
+    .text{
+        font-size: 60%;
+    }
+    .dot{
+        height: 5px;
+        width: 5px;
+        margin-bottom: 5%;
+    }
+    /* главная */
+    .inf-tbl{
+        width: 80%;
+        margin: auto;
+    }
+    .logo3 > img{
+        width: 20%;
+        height: 20%;
+    }
+    .logotxt2{
+        margin: auto;
+        margin-left: 1%;
+        width: 20%;
+    }
+    .logotxt2 h4{
+        font-size: 97%;
+        margin-left: 1px;
+    }
+    .logotxt2 p{
+        font-size: 70%;
+    }
+    .foot > nav{
+        width: 150%;
+    }
+}
+@media screen and (max-width:530px){
+    .botnav{
+        width: 30%;
+    }
+    .logotxt2{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:503px){
+    .botnav{
+        width: 32%;
+    }
+}
+@media screen and (max-width:480px){
+    .botnav{
+        width: 35%;
+    }
+}
+@media screen and (max-width:455px){
+    .botnav{
+        width: 37%;
+    }
+}
+@media screen and (max-width:440px){
+    .botnav{
+        width: 40%;
+    }
+}
+@media screen and (max-width:416px){
+    .botnav{
+        width: 42%;
+    }
+}
+@media screen and (max-width:403px){
+    .botnav{
+        width: 45%;
+    }
+}
+@media screen and (max-width:385px){
+    .botnav{
+        width: 47%;
+    }
+}
+@media screen and (max-width:375px){
+    .botnav{
+        width: 50%;
+    }
+}
