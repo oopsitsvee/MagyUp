@@ -1,6 +1,3 @@
-<?php
-include = "db.php";
-$result = mysqli_query($induction,"SELECT ")
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,38 +8,41 @@ $result = mysqli_query($induction,"SELECT ")
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="shortcut icon" href="../img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Маги Ап</title>
+    <link href="../css2/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet" type="text/css" />
+<title>Маги Ап</title>
 </head>
 <body>
-    <header>
-            <div class="logo">
-                <p class="logo1">Маги <span class="logo2">Ап</span></p>
-                <p class="logotxt">Мы в ответе за тех, кого приручили</p>
-            </div>
-            <nav>
-                <div class="topnav" id="TopNav">
-                    <a href="index.html">Главная</a>
-                    <a href="buy.html">Купить щенка</a>
-                    <a href="breed.html">О породах</a>
-                    <a href="news.html">Новости</a>
-                    <a href="contacts.html">Контакты</a>
-                    <a id="menu" href="#" class="icon">&#9776;</a>
-                </div>
-                <p class="phone">Тел. 8-928-104-76-48</p>
-            </nav>
-            <div class="icons">
-            <a href=""><img src="../img/phone.png"/></a>
-            <a href=""><img src="../img/heart.svg"/></a>
-            <a href=""><img src="../img/user.png"/></a>
-            </div>
-        </header>
+    <div class="cookie_notice">
+        Этот сайт использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для обеспечения работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.
+        <div>
+            <a class="cookie_btn" id="cookie_close" href="#close">Согласиться</a>
+            <a class="cookie_btn" href="#politica">Политика конфиденциальности</a>
+        </div>
+    </div>
+    <header >
+        <div class="logo">
+            <a href="#" class="logo1">Маги <span class="logo2">Ап</span></a>
+            <p class="logotxt">Мы в ответе за тех, кого приручили</p>
+        </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Купить щенка</a></li>
+          <li><a href="breed.html">О породах</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href=""><img src="../img/heart.svg"></a></li>
+          <li><a href="#"><img src="../img/user.png"></a></li>                       
+        </ul>
+      </header>
     <main>
 
     <div class="main">
         <div class="main-txt">
         <h1>Не только людям нужен дом</h1>
         <p>Каждый может сделать собаку счастливой</p>
-        <button class="main-but" onclick= "window.location.href = 'buy.html';">Перейти к выбору</button>
+        <button class="main-but" onclick= "window.location.href = 'catalog.html';">Перейти к выбору</button>
         </div>
         <img src="../img/main dog.png" class="md" height="600px" width="600px">  
     </div>
@@ -111,12 +111,13 @@ $result = mysqli_query($induction,"SELECT ")
 </main>
     <footer>
         <div class="foot">
-            <img src="../img/logoooo.jpg" width="100px" height="100px">
-            <p>By Osipenko & Didenko</p>
+            <img class="imgfoot" src="../img/logoooo.jpg" width="100px" height="100px">
+            <p>By Osipenko Viktoria</p>
             <p> Телефон для связи: 8-928-104-76-48</p>
         </div>
     </footer> 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="../js/main.js"></script>  
 </body>
 </html>
